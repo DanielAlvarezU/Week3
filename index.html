@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel Week3 Aria Roles</title>
+</head>
+<body>
+    <nav>
+        <ul aria-label="Main navigation">
+            <li><a href="home.html" aria-current="page" aria-label="Home page">Home</a></li>
+            <li><a href="about.html" aria-label="About us page">About</a></li>
+            <li><a href="services.html" aria-disabled="true" aria-label="Services page">Services</a></li>
+            <li><a href="contact.html" aria-label="Contact us page">Contact</a></li>
+        </ul>
+    </nav>   
+
+    <main>
+        <section id="home" aria-labelledby="home-heading" aria-describedby="home-description">
+            <h1 id="home-heading">Welcome to Our Home Page</h1>
+            <p id="home-description">This is the main page of our website where you can find the latest updates and news.</p>
+            <article>
+                <h2>Latest News</h2>
+                <p>Stay up-to-date with the latest news from our company and the industry.</p>
+                <p>We have recently launched a new product line that focuses on sustainable and eco-friendly solutions.</p>
+            </article>
+        </section>
+
+        <section id="about" aria-labelledby="about-heading" aria-describedby="about-description">
+            <h1 id="about-heading">About Us</h1>
+            <p id="about-description">Learn more about our company and team.</p>
+            <article>
+                <h2>Our Mission</h2>
+                <p>Our mission is to provide innovative solutions that improve the quality of life for our customers and the community.</p>
+            </article>
+            <article>
+                <h2>Our Team</h2>
+                <p>We have a dedicated team of professionals with a diverse range of skills and expertise.</p>
+            </article>
+        </section>
+
+        <section id="services" aria-labelledby="services-heading">
+            <h1 id="services-heading">Our Services</h1>
+            <p aria-details="services-details">We offer a variety of services to meet your needs.</p>
+            <div id="services-details">
+                <article>
+                    <h2>Consulting</h2>
+                    <p>We provide expert consulting services to help businesses achieve their goals.</p>
+                </article>
+                <article>
+                    <h2>Development</h2>
+                    <p>Our development team can create custom solutions tailored to your specific requirements.</p>
+                </article>
+                <article>
+                    <h2>Support</h2>
+                    <p>We offer comprehensive support services to ensure your systems run smoothly.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="contact" aria-labelledby="contact-heading" aria-describedby="contact-info">
+            <h1 id="contact-heading">Contact Us</h1>
+            <p>Feel free to reach out to us via the following methods:</p>
+            <div id="contact-info">
+                <p>Email: daniel123@companyt.com</p>
+                <p>Phone: (123) 223-3344</p>
+                <p>Address: 23 north, CAD</p>
+            </div>
+            <footer role="contentinfo">
+                <p>&copy; 2024 Your Company. All rights reserved.</p>
+            </footer>
+        </section>
+    </main>
+</body>
+</html>
